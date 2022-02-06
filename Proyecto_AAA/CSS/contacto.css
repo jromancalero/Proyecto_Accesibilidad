@@ -1,0 +1,100 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* SECCION 1 DE CONTACTO */
+
+#seccion1 {
+    display: flex;
+    flex-direction: column;
+}
+
+#header-seccion1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("../imagenes/contacto/taller1.jpg");
+    background-color: rgba(black, black, black, 0.8);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    width: 100%;
+    height: 360px;
+}
+
+.titulo-naranja {
+    font-weight: bold;
+    font-size: 45px;
+    color: #f8360a;
+    margin-left: 30px;
+    opacity: 1;
+}
+
+#header-seccion1 div {
+    background-color: rgba(13, 5, 59, 0.5);
+    text-align: center;
+}
+
+#articulo1-seccion1 {
+    display: flex;
+    justify-content: center;
+}
+
+#form-articulo1 {
+    display: grid;
+    grid-template-columns: auto auto;
+    flex: 100%;
+    max-width: 1000px;
+    justify-items: center;
+    margin-top: 30px;
+    box-shadow: 0px 0px 51px 0px rgba(0, 0, 0, 0.85);
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#sub-formulario1 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    position: sticky;
+    bottom: 20px;
+}
+
+#video h1 {
+    font-size: 26px;
+}
+
+input:focus {
+    border: 3px solid black;
+}
+
+input:enabled {
+    background-color: azure
+}
+
+input:disabled {
+    background-color: rgb(87, 85, 85);
+}
+
+input:required {
+    background-color: red;
+}
+
+@media (max-width: 700px) {
+    #form-articulo1 {
+        grid-template-columns: auto;
+    }
+    video {
+        width: 350px;
+    }
+}
